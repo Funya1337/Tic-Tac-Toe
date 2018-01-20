@@ -1,0 +1,14 @@
+.r1 {
+  background-color:black;
+  width: 30px;
+  height: 30px;
+  border: 4px double red;
+  padding: 10px;
+}
+.arena1 {
+    display: flex;
+}
+.main {
+  margin: auto;
+  width: 174px;
+}
