@@ -1,5 +1,4 @@
 .r1 {
-  background-color:black;
   width: 30px;
   height: 30px;
   border: 4px double red;
@@ -11,4 +10,25 @@
 .main {
   margin: auto;
   width: 174px;
+}
+
+.colorfull {
+  background-color:grey;
+  width: 30px;
+  height: 30px;
+  border: 4px double red;
+  padding: 10px;
+}
+.button {
+  margin-top: 60px;
+}
+.bg {
+  background-color: black;
+}
+.dull {
+  background-color:green;
+  width: 30px;
+  height: 30px;
+  border: 4px double red;
+  padding: 10px;
 }
