@@ -13,7 +13,10 @@
 }
 
 .colorfull {
-  background-color:grey;
+  background-image: url(../ai.jpg);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 30px;
   height: 30px;
   border: 4px double red;
@@ -23,10 +26,13 @@
   margin-top: 60px;
 }
 .bg {
-  background-color: black;
+  background-color: white;
 }
 .dull {
-  background-color:green;
+  background-image: url(../player.jpg);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 30px;
   height: 30px;
   border: 4px double red;

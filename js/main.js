@@ -1,4 +1,5 @@
 var flag = true;
+var array = true;
 function funcflag(elId) {
   if (flag === true) {
     document.getElementById(elId).className = "colorfull";
@@ -8,5 +9,4 @@ function funcflag(elId) {
 }
 function funcflag1() {
   flag = !flag;
-  console.log(flag);
 }
