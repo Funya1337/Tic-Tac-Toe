@@ -9,25 +9,26 @@
       <script src="js/main.js"></script>
     <div class='main' id='main1'>
       <div class='arena1' id='arid1'>
-        <div onclick="funcflag('r2')" id="r2" class='r1 bg'></div>
-        <div onclick="funcflag('r3')" id="r3" class='r1 bg'></div>
-        <div onclick="funcflag('r4')" id="r4" class='r1 bg'></div>
+        <div onclick="makeMove(0)" id="r0" class='r1 bg'></div>
+        <div onclick="makeMove(1)" id="r1" class='r1 bg'></div>
+        <div onclick="makeMove(2)" id="r2" class='r1 bg'></div>
       </div>
       <div class='arena1' id='arid2'>
-        <div onclick="funcflag('r5')" id="r5" class='r1 bg'></div>
-        <div onclick="funcflag('r6')" id="r6" class='r1 bg'></div>
-        <div onclick="funcflag('r7')" id="r7" class='r1 bg'></div>
+        <div onclick="makeMove(3)" id="r3" class='r1 bg'></div>
+        <div onclick="makeMove(4)" id="r4" class='r1 bg'></div>
+        <div onclick="makeMove(5)" id="r5" class='r1 bg'></div>
       </div>
       <div class='arena1' id='arid3'>
-        <div onclick="funcflag('r8')" id="r8" class='r1 bg'></div>
-        <div onclick="funcflag('r9')" id="r9" class='r1 bg'></div>
-        <div onclick="funcflag('r0')" id="r0" class='r1 bg'></div>
+        <div onclick="makeMove(6)" id="r6" class='r1 bg'></div>
+        <div onclick="makeMove(7)" id="r7" class='r1 bg'></div>
+        <div onclick="makeMove(8)" id="r8" class='r1 bg'></div>
       </div>
     </div>
   <div class="button">
     <center>
   <div id="null">
-    <button onclick="funcflag1()" id="flagid1">321</button>
+    <button onclick="changeFlag()" id="flagid1">changeFlag</button>
+    <button onclick="clo()">alert</button>
   </div>
   </center>
   </div>
