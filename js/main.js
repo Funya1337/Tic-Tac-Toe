@@ -5,7 +5,7 @@ function clo() {
   console.log(foo)
 }
 
-function checkBasic(value, text) {
+function checkBasic(value) {
   if ((foo[0] === value && foo[1] === value && foo[2] === value)
     || (foo[0] === value && foo[3] === value && foo[6] === value)
     || (foo[1] === value && foo[4] === value && foo[7] === value)
@@ -14,18 +14,22 @@ function checkBasic(value, text) {
     || (foo[6] === value && foo[7] === value && foo[8] === value)
     || (foo[0] === value && foo[4] === value && foo[8] === value)
     || (foo[6] === value && foo[4] === value && foo[2] === value)) {
-    document.getElementById("demo").innerHTML = text;
+    return true;
   }
+  return false;
 }
 
 function check0() {
-  checkBasic(0, "Нолики выиграли нажми F5");
+  if (checkBasic(0) === true) {
+    document.getElementById("demo").innerHTML = "Нолики выиграли нажми F5";
+  }
 }
 
 function checkX() {
-  checkBasic(1, "Крестики выйграли нажми F5")
+if (checkBasic(1) === true) {
+    document.getElementById("demo").innerHTML = "Крестики выиграли нажми F5";
+  }
 }
-
 function makeMove(id) {
   console.log('------------');
   console.log('before makeMove()');
@@ -42,19 +46,28 @@ function makeMove(id) {
       foo[id] = 1;
       document.getElementById(c1).className = "dull";
     }
+    flag = !flag;
   }
   console.log('after makeMove()');
   console.log('foo',foo);
   console.log('foo[id]', foo[id]);
   check0();
   checkX();
+  checkInc();
 }
 
-function changeFlag() {
-  console.log('------------');
-  console.log('before changeFlag()');
-  console.log('flag', flag);
-  flag = !flag;
-  console.log('after changeFlag()');
-  console.log('flag', flag);
+function checkHasMoves() {
+  console.log(foo);
+  for (let i=0; i<9; i++) {
+    if (foo[i] === undefined) {
+      return true;
+    }
+  }
+  return false;
+}
+
+function checkInc() {
+  if (!checkBasic(0) && !checkBasic(1) && !checkHasMoves()) {
+    document.getElementById("demo").innerHTML = "ничья";
+  }
 }

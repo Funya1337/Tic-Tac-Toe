@@ -1,8 +1,9 @@
 .r1 {
   width: 30px;
   height: 30px;
-  border: 4px double red;
+  border: 3px double #3CF1D5;
   padding: 10px;
+  border-style: solid;
 }
 .arena1 {
     display: flex;
@@ -19,8 +20,9 @@
   background-position: center;
   width: 30px;
   height: 30px;
-  border: 4px double red;
+  border: 3px double #3CF1D5;
   padding: 10px;
+  border-style: solid;
 }
 .button {
   margin-top: 60px;
@@ -35,8 +37,9 @@
   background-position: center;
   width: 30px;
   height: 30px;
-  border: 4px double red;
+  border: 3px double #3CF1D5;
   padding: 10px;
+  border-style: solid;
 }
 .text {
   padding-top: 40px;
